@@ -1,0 +1,52 @@
+/* reset default styles  */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* using vh to get the window full height of the any all page */
+body{
+    min-height: 100vh;
+}
+
+/* font-size by default on texts is 16px */
+/*Pixel: when you explicitly assign a particular size to an element like in px, its stay the same even when the user tries to change the view setting */
+
+p{
+    font-size:32px ;
+}
+
+/* but in some occasion, we must explicitly set size for instance this one below on dashed border */
+h1{
+border: 2px dashed red
+}
+
+/* percentages: units thats the relative value of its container */
+/* for example, h1 is taking 50% of its container which is header element */
+
+header{
+    width: 50%
+}
+/* example of rem and em, below each em represent inherit values of rem, example below, 1em === 3rem */
+
+ h1{
+    width: 50%;
+    /* margin:3rem;
+    padding: 1em; */
+    padding:0.5em
+
+ }
+
+ /* rem: feeds from root element which is html or browser, and then em do feeds of the parent element */
+ main{
+    font-size: 2rem;
+    
+ }
+ /* ch: this unit will give us a specified number of characters per line*/
+ p{
+    font-size:2rem;
+    /* in this case, each line will consist of around 35 characters  */
+    width: 34ch
+
+ }
