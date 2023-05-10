@@ -1,0 +1,29 @@
+/* Typography is the way that text is presented */
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family: sans-serif
+}
+
+/* input,buttom{
+    font-size:inherit ;
+   
+} */
+
+
+
+p{
+    text-decoration: overline;
+    text-transform: uppercase;
+    /* justify to make all rows equal */
+    text-align: justify;
+    /* used to get som space on the first line */
+    text-indent: 3em;
+    /* the default in 1.2, this is the space between paragraph line*/
+    line-height:1.5;
+    /* it proving the space among letters */
+    letter-spacing: 1em;
+    /* word-spacing, this provides th space among words*/
+     word-spacing: 0.5m;
+
+}
