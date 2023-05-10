@@ -5,3 +5,28 @@ body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
+
+a{
+    /* to remove default underline */
+    /* text-decoration: none;
+    /* the cursor will be displayed a not allowed cursor  */
+    /* cursor: not-allowed; */
+    /* cursor:pointer;
+    color:green  */
+  color:#000
+}
+
+/* pseudo class used to get a current value */
+/* clicked once */
+/* a:visited{
+    color: red;
+} */
+ /* a:focus is used to for touch screen reader to show em the links */
+a:hover , a:focus {
+    color:greenyellow
+}
+
+/* when clicked */
+a:active{
+    color:yellow
+}
