@@ -5,3 +5,32 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
+
+
+/* we can add start to specify when numbering stars, attribute in <ol start="3" reversed ></ol> */
+ol{
+  list-style-type: lower-roman;
+}
+
+ul{
+  list-style-type: square;
+  text-align: center;
+  /* inside value make them list moves with the content */
+  list-style-position: inside;
+  /* list-style-image: url('../images/checkmark.png'); */
+  /* short hand: shape image position */
+  /* list-style:square url('../images/checkmark.png') inside ; */
+}
+
+/* pseudo class in lists: choosing a specific list item, in this case we choose the second || we can pass odd or even parameter in the child*/
+ul li:nth-child(2) {
+  color: green
+}
+
+/* pseudo element */
+ul ::marker{
+  color:red;
+  font-family: fantasy;
+  font-size: 1em;
+  content:"only 5$ >>"
+}
