@@ -17,6 +17,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -31,4 +32,93 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+  position: relative;
+}
+
+.absolute {
+background: #00f;
+position: absolute;
+top:0;
+left:0;
+/* changing elements steps over each other by using z-index, by default all elements are 0 */
+z-index: 1;
+}
+
+.relative {
+  background-color: red;
+  position:relative;
+  top: 300px;
+  left:100px
+}
+
+/* this inherit relative from the browser and it doesn't move */
+.fixed {
+  background: green;
+  position: fixed;
+  top:100px
+}
+
+.sticky {
+  background: black;
+  position: sticky;
+  top:0
+}
+
+/* Proj 2, how to make things disappear */
+
+/* ////////////////////////////////////////////////// */
+
+/* making the scroll smoother */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height:100vh;
+}
+
+
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+
+
+header, footer {
+  color: white;
+  text-align:center;
+  height: 100px
+}
+
+header {
+  position:sticky;
+  top:0;
+  font-size: 5rem
+}
+
+footer{
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 3rem;
+}
+a:visited {
+  color:white
+}
+
+.social {
+  background: royalblue;
+  color:white;
+  font-size: inherit;
+  padding: 1rem;
+  position:fixed;
+  top:30%;
+  left:0;
+  z-index: 1;
 }
