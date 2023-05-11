@@ -4,3 +4,41 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
+
+.columns {
+  /* column-count: 4;
+  column-width: 250px; */
+  columns: 4 250px;
+  /* column rule is used to show a separator line when two or more column is displayed */
+  column-rule: 3px solid #333;
+  /* spacing between columns */
+   column-gap:3rem
+}
+
+/* remove pages top-margin */
+
+.columns p {
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  background-color: #333;
+  color:white;
+  padding:1rem;
+  /* this avoids an element to breaks no matter what */
+  break-inside: avoid;
+}
+
+.columns .quote{
+font-size: 3rem;
+text-align: center;
+color:#333;
+column-span:all;
+margin-top: 2rem;
+
+}
+
+.nowrap{
+  white-space:nowrap
+}
