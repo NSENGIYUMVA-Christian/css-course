@@ -17,13 +17,58 @@ body {
   min-height: 400px;
   margin-inline: auto;
   border: 1px solid #000;
+  display:flex;
+  gap:1rem;
+  /*  we use justify-content to align items horizontally and give space, aligning items in flex display */
+  justify-content:center ;
+
+  /* aligning items vertically we use align-items */
+  align-items: center;
+
+  /* by default flex direction in row but we can change it */
+  /* flex-direction: row; */
+
+  /* controlling overflow of elements */
+  /* flex-wrap: wrap; */
+
+  /* short hand for flex-direction and wrap, first val is direction,sec is wrap */
+flex-flow: row wrap ;
+
+/* moving rows in a container */
+align-content: space-evenly;
 } 
 
 .box {
-  min-width: 100px;
-  min-height: 100px;
+  /* min-width: 100px; */
+  height: 100px;
   background-color: #000;
   color: #fff;
   font-size: 2rem;
   padding: 0.5rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* make boxes grows to fit the container */
+  /* flex-grow:1 ; */
+
+  flex-shrink:1;
+
+/* giving the box a width */
+   flex-basis: 100px;
+
+   /* short hand fof flex grow and basis, first val is grow, shrink and basis */
+   flex: 1 1 250px
+}
+
+.box:nth-child(2){
+  /* this will take the remaining space og element 1 growth */
+  /* flex-grow:2 */
+
+  flex: 2 2 250px;
+
+  /* ordering */
+  order:-1
 }
