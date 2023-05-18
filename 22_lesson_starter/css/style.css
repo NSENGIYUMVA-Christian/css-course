@@ -33,3 +33,19 @@ div {
   display: grid;
   place-content: center;
 }
+
+div:first-child {
+  background-color: dodgerblue;
+  /* transform:translateX(50%) */
+  
+}
+div:nth-child(2) {
+  background-color: yellow;
+  /* transform: translateY(-2rem) */
+}
+div:last-child {
+  background-color:limegreen;
+  /* transform: translate(100%,-2rem) */
+}
+
+
